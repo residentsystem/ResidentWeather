@@ -1,0 +1,41 @@
+@page
+@model WidgetModel
+@{
+}
+
+<div class="text-center">
+    <h1>Forecast weather widget collection</h1>
+    <h2>Location: @Model.Weather.name, @Model.Weather.sys.country</h2>
+</div>
+
+<h3>Small size widget</h3>
+<div class="box-small-weather-widget">
+    <ul>
+        <li class="temperature"><p>@Model.SmallWidget.temperature</p></li>
+    </ul>
+</div>
+
+<h3>Medium size widget</h3>
+<div class="box-medium-weather-widget">
+    <ul>
+        <li class="temperature"><p>@Model.MediumWidget.temperature</p></li>
+        <li class="icon"><img src="@Model.MediumWidget.icon" alt="Weather Icon" width="60" height="60"></li>
+    </ul>
+</div>
+
+<h3>Large size widget</h3>
+<div class="box-big-weather-widget">
+    <ul>
+        <li class="location">
+            <span class="name">@Model.BigWidget.name, @Model.BigWidget.country</span>
+            <span>@Model.BigWidget.main: @Model.BigWidget.description</span>
+        </li>
+        <li class="temperature"><span>@Model.BigWidget.temperature</span></li>
+        <li class="icon"><img src="@Model.BigWidget.icon" alt="Weather Icon" width="60" height="60"></li>
+        <li class="description">
+            <span>Feels like @Model.BigWidget.feelslike</span>
+            <span>Wind @Model.BigWidget.windspeed m/s</span>
+            <span>Humidity @Model.BigWidget.humidity%</span>
+        </li>
+    </ul>
+</div>

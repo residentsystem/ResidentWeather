@@ -1,0 +1,275 @@
+﻿/* -------------------------------------------- Body -------------------------------------------- */
+
+html {
+  font-size: 14px;
+  min-height: 100%;
+  position: relative;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+/* -------------------------------------------- Bootstrap -------------------------------------------- */
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+/* -------------------------------------------- Buttons -------------------------------------------- */
+
+a.btn-primary {
+  background-color: #0093d0;
+  font-size: 1.1em;
+  font-weight: 800;
+  margin: 30px 0 30px 0;
+  min-width: 12em;
+}
+
+a.btn-primary:hover {
+  background-color: #04cbf5;
+  
+}
+
+a.btn-dark {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  font-size: 1.1em;
+  font-weight: 800;
+  margin: 30px 0 30px 0;
+  width: 12.5em;
+}
+
+a.btn-dark:hover {
+  background-color: #151515;
+  color: #f0f0f0;
+}
+
+/* -------------------------------------------- General -------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; 
+  line-height: 1.2em; 
+  margin: 0.3em 0 0.3em 0; 
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.0em; 
+}
+
+a {
+  color: #0093d0;
+  font-size: 1.0em;
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  color: #04cbf5;
+}
+
+
+/* -------------------------------------------- Navbar -------------------------------------------- */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* -------------------------------------------- Weather Widget -------------------------------------------- */
+
+/* ---- Small Widget ---- */
+
+.box-small-weather-widget {
+  background-color: #fdfdfd;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 80px;
+  margin: 10px;
+  position: relative;
+  width: 115px;
+}
+
+.box-small-weather-widget ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.box-small-weather-widget li {
+  display: block;
+  height: 60px;
+  margin: 9px 0 0 6px;
+  position: relative;
+}
+
+.box-small-weather-widget li.temperature {
+  border-radius: 8px;
+  font-size: 2.1em;
+  font-weight: 700;
+  text-align: center;
+  width: 100px;
+}
+
+/* ---- Medium Widget ---- */
+
+.box-medium-weather-widget {
+  background-color: #fdfdfd;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 80px;
+  margin: 10px;
+  position: relative;
+  width: 200px;
+}
+
+.box-medium-weather-widget ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.box-medium-weather-widget li {
+  display: block;
+  float: left;
+  height: 60px;
+  margin: 9px 0 0 6px;
+  position: relative;
+}
+
+.box-medium-weather-widget li.temperature {
+  border-radius: 8px;
+  font-size: 2.1em;
+  font-weight: 700;
+  text-align: center;
+  width: 100px;
+}
+
+.box-medium-weather-widget li.icon {
+  background-color: #0093d0;
+  border: 1px solid #04cbf5;
+  border-radius: 8px;
+  width: 80px;
+}
+
+.box-medium-weather-widget li.icon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---- Big Widget ---- */
+
+.box-big-weather-widget {
+  background-color: #fdfdfd;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 80px;
+  margin: 10px;
+  position: relative;
+  width: 497px;
+}
+
+.box-big-weather-widget ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.box-big-weather-widget li {
+  display: block;
+  float: left;
+  height: 60px;
+  margin: 9px 0 0 6px;
+  position: relative;
+}
+
+.box-big-weather-widget li.location {
+  margin-left: 8px;
+  width: 180px;
+}
+
+.box-big-weather-widget li.location span.name {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.box-big-weather-widget li.location span, .box-big-weather-widget li.description span {
+  display: block;
+  margin-left: 8px;
+  width: 100%;
+}
+
+.box-big-weather-widget li.temperature {
+  border: 1px solid #a1a1a1;
+  background-color: #c7c7c7;
+  border-radius: 8px;
+  font-size: 2.1em;
+  font-weight: 700;
+  text-align: center;
+  width: 100px;
+}
+
+.box-big-weather-widget li.icon {
+  background-color: #0093d0;
+  border: 1px solid #04cbf5;
+  border-radius: 8px;
+  width: 80px;
+}
+
+.box-big-weather-widget li.icon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-big-weather-widget li.description {
+  width: 100px;
+}
+
+.box-big-weather-widget li.description span {
+  font-size: 0.8em;
+}
+
+/* -------------------------------------------- Footer -------------------------------------------- */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
