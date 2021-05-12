@@ -1,0 +1,74 @@
+﻿@page
+@model IndexModel
+@{
+}
+
+<div class="text-center">
+    <h1>Forecast weather data collection</h1>
+    <h2>Location: @Model.Weather.name, @Model.Weather.sys.country</h2>
+</div>
+
+<div>
+    <h3>Coord</h3>
+    <ul>
+        <li>Longitude: @Model.Weather.coord.lon</li>
+        <li>Lattitude: @Model.Weather.coord.lat</li>
+    </ul>
+
+    <h3>Weather</h3>
+    <ul>
+        <li>Id: @Model.Weather.weather[0].id</li>
+        <li>Main: @Model.Weather.weather[0].main</li>
+        <li>Description: @Model.Weather.weather[0].description</li>
+        <li>Icon: @Model.Weather.weather[0].icon</li>
+    </ul>
+
+    <h3>Base</h3>
+    <ul>
+        <li>Base: @Model.Weather._base</li>
+    </ul>
+
+    <h3>Main</h3>
+    <ul>
+        <li>Temperature: @Model.Weather.main.temp</li>
+        <li>Feels like: @Model.Weather.main.feels_like</li>
+        <li>Temperature (min): @Model.Weather.main.temp_min</li>
+        <li>Temperature (max): @Model.Weather.main.temp_max</li>
+        <li>Pressure: @Model.Weather.main.pressure</li>
+        <li>Humidity: @Model.Weather.main.humidity</li>
+    </ul>
+
+    <h3>Visibility</h3>
+    <ul>
+        <li>Visibility: @Model.Weather.visibility</li>
+    </ul>
+
+    <h3>Wind</h3>
+    <ul>
+        <li>Speed: @Model.Weather.wind.speed</li>
+        <li>Deg: @Model.Weather.wind.deg</li>
+    </ul>
+
+    <h3>Clouds</h3>
+    <ul>
+        <li>All: @Model.Weather.clouds.all</li>
+    </ul>
+
+    <h3>Dt</h3>
+    <ul>
+        <li>Dt: @Model.Weather.dt</li>
+    </ul>
+
+    <h3>System</h3>
+    <ul>
+        <li>Type: @Model.Weather.sys.type</li>
+        <li>Id: @Model.Weather.sys.id</li>
+        <li>Country: @Model.Weather.sys.country</li>
+        <li>Sunrise: @Model.Weather.sys.sunrise</li>
+        <li>Sunset: @Model.Weather.sys.sunset</li>
+        <li>Timezone: @Model.Weather.timezone</li>
+        <li>Id: @Model.Weather.sys.id</li>
+        <li>Name: @Model.Weather.name</li>
+        <li>Cod: @Model.Weather.cod</li>
+    </ul>
+</div>
